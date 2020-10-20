@@ -1,13 +1,28 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
+    // function hoisting
+calculateAge(1965)
+//func declaration
+function calculateAge(year){
+    console.log(2016 - year);
+}
+
+
+// retirement(1990)
+// function expression
+var retirement = function(year){
+    console.log(65 - (2020 - year))
+}
+
+// variables
+// cdoe is scanned for variables which are then set to undefined. that's why consoling a variable before its declaration logs undefined
+console.log(age) // undefined
+var age = 23
+console.log(age)
 
 
 
-
-
-
-
-
+// hoisting with functions only works with function declarations (not func expressions)
 
 
 
